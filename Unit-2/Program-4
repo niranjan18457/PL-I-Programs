@@ -1,1 +1,63 @@
+4.
+Problem Statement
+Write a C program using the switch-case statement to create a menu-driven calculator that repeatedly
+performs arithmetic operations until the user chooses to exit.
+
+Program
+
+#include<stdio.h>
+int main()
+{
+int choice;
+float num1, num2, result;
+do
+{
+printf(&quot;\n----- MENU-DRIVEN CALCULATOR -----\n&quot;);
+printf(&quot;1. Addition\n&quot;);
+printf(&quot;2. Subtraction\n&quot;);
+printf(&quot;3. Multiplication\n&quot;);
+printf(&quot;4. Division\n&quot;);
+printf(&quot;5. Exit\n&quot;);
+printf(&quot;Enter your choice: &quot;);
+scanf(&quot;%d&quot;, &amp;choice);
+if (choice &gt;= 1 &amp;&amp; choice &lt;= 4)
+{
+printf(&quot;Enter two numbers: &quot;);
+scanf(&quot;%f %f&quot;, &amp;num1, &amp;num2);
+}
+switch (choice)
+{
+case 1:
+
+{
+result = num1 + num2;
+printf(&quot;Result = %.2f\n&quot;, result);
+break;
+}
+case 2:
+{
+result = num1 - num2;
+printf(&quot;Result = %.2f\n&quot;, result);
+break;
+}
+case 3:
+{
+result = num1 * num2;
+printf(&quot;Result = %.2f\n&quot;, result);
+break;
+}
+case 4:
+{
+if (num2 != 0)
+{
+result = num1 / num2;
+printf(&quot;Result = %.2f\n&quot;, result);
+}
+else
+{
+printf(&quot;Division by zero is not possible.\);
+}
+return 0;
+}
+
 
