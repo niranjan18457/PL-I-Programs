@@ -1,1 +1,25 @@
+2. 
+
+Problem Statement
+Write a C program to accept a number from the user and check whether the given number is even or
+odd.
+
+Program
+
+#include<stdio.h>;
+int main()
+{
+int num;
+printf(&quot;Enter a number: &quot;);
+scanf(&quot;%d&quot;, &amp;num);
+if (num % 2 == 0)
+{
+printf(&quot;%d is an Even number.\n&quot;, num);
+}
+else
+{
+printf(&quot;%d is an Odd number.\n&quot;, num);
+}
+return 0;
+}
 
